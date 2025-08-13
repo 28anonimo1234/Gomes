@@ -1,5 +1,6 @@
 # Marketpace-Project
 Projeto solo de um marketplace.
+----------------------------------------------------------------
 marketplace/
 ├── backend/              # Código Python (Django/Flask)
 ├── frontend/             # Código JavaScript (React/Next.js)
