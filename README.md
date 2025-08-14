@@ -1,17 +1,16 @@
-# Marketplace-Project
+# Marketplace Project
 
-Projeto em dupla de um marketplace.
+Projeto desenvolvido em dupla para criar um marketplace.
 
 ## Estrutura do Projeto
 
-├── backend/           # Código Python (Django/Flask)
--------------------------------------------------------------
-├── frontend/          # Código JavaScript (React/Next.js)
--------------------------------------------------------------
-├── database/          # Scripts SQL e diagramas do Workbench
--------------------------------------------------------------
-├── README.md          # Este arquivo
--------------------------------------------------------------
-└── requirements.txt   # Dependências do Python
+Backend/           # Código do backend em Python (Django/Flask) -
+Frontend/          # Código do frontend em JavaScript (React/Next.js) -
+Database/          # Scripts SQL e diagramas do MySQL Workbench -
+README.md          # Documentação do projeto (este arquivo) -
+Requirements.txt   # Dependências do Python
 
-🖥💾
+
+## Descrição
+
+Este projeto consiste em um marketplace desenvolvido em dupla, com backend em Python, frontend em JavaScript e banco de dados gerenciado com SQL.
