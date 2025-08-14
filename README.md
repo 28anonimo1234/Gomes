@@ -14,3 +14,5 @@ Requirements.txt   # Dependências do Python
 ## Descrição
 
 Este projeto consiste em um marketplace desenvolvido em dupla, com backend em Python, frontend em JavaScript e banco de dados gerenciado com SQL.
+
+![This is an alt text.](https://ibb.co/67c3V2Y6")
