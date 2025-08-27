@@ -1,0 +1,29 @@
+CREATE DATABASE Gomes;
+USE Gomes;
+DROP DATABASE Gomes;
+
+CREATE TABLE Cliente (
+   Id_cliente INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+   Nome VARCHAR (70) AUTO_INCREMENT NOT NULL,
+   Idade CHAR (3) NOT NULL,
+   Email VARCHAR (80) NOT NULL,
+   Telefone VARCHAR (11) NOT NULL,
+   Endereco VARCHAR (50) NOT NULL
+);
+
+CREATE TABLE Produto (
+   Id_produto INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+   Nome_produto VARCHAR (50) NOT NULL,
+   Tipo VARCHAR (30) NOT NULL,
+   Preco DECIMAL (5,2) NOT NULL,
+   Descricao VARCHAR (100) NOT NULL,
+   Tamanho DECIMAL (2,2) NOT NULL,
+   Peso DECIMAL (2,2) NOT NULL
+);
+
+CREATE TABLE Venda (
+   Id_venda INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+   Total_venda DECIMAL (4,2) NOT NULL,
+   FOREIGN KEY (Id_cliente) REFERENCES Cliente (Id_cliente),
+   FOREIGN KEY (Id_produto) REFERENCES Produto (Id_produto)
+);
