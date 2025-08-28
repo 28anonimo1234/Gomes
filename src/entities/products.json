@@ -1,0 +1,84 @@
+
+{
+  "name": "products",
+  "options": {
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": ["productId", "name", "price", "category", "inStock", "rating"],
+        "properties": {
+          "productId": {
+            "bsonType": "string",
+            "description": "Identificador único do produto"
+          },
+          "name": {
+            "bsonType": "string",
+            "description": "Nome do produto"
+          },
+          "description": {
+            "bsonType": "string",
+            "description": "Descrição detalhada do produto"
+          },
+          "price": {
+            "bsonType": "number",
+            "minimum": 0,
+            "description": "Preço do produto"
+          },
+          "originalPrice": {
+            "bsonType": "number",
+            "minimum": 0,
+            "description": "Preço original antes do desconto"
+          },
+          "category": {
+            "bsonType": "string",
+            "enum": ["processadores", "placas-video", "memorias", "armazenamento", "teclados", "mouses", "headsets", "controles", "smartphones"]
+          },
+          "brand": {
+            "bsonType": "string",
+            "description": "Marca do produto"
+          },
+          "inStock": {
+            "bsonType": "bool",
+            "description": "Disponibilidade em estoque"
+          },
+          "quantity": {
+            "bsonType": "int",
+            "minimum": 0,
+            "description": "Quantidade em estoque"
+          },
+          "rating": {
+            "bsonType": "number",
+            "minimum": 0,
+            "maximum": 5,
+            "description": "Avaliação do produto"
+          },
+          "images": {
+            "bsonType": "array",
+            "description": "URLs das imagens do produto"
+          },
+          "specifications": {
+            "bsonType": "object",
+            "description": "Especificações técnicas"
+          },
+          "creator": {
+            "bsonType": "string",
+            "description": "Criador do produto"
+          },
+          "createdAt": {
+            "bsonType": "string",
+            "description": "Data de criação ISO 8601",
+            "title": "datetime"
+          },
+          "updatedAt": {
+            "bsonType": "string",
+            "description": "Data de atualização ISO 8601",
+            "title": "datetime"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "validationLevel": "moderate",
+    "validationAction": "warn"
+  }
+}
