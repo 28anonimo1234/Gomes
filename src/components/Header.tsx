@@ -27,7 +27,7 @@ const Header: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
           <span>Frete grátis para compras acima de R$ 299</span>
           <div className="hidden md:flex items-center space-x-4">
-            <span>Suporte: (11) 99999-9999</span>
+            <span>Suporte: (13) 99676-0180</span>
             <span>|</span>
             <span>Entrega em todo Brasil</span>
           </div>
